@@ -2,6 +2,12 @@ language: node_js
 sudo: required
 node_js: stable
 
+env:
+  global: # 全局变量，上面的提交到github的命令有用到
+    - GH_REF: github.com/humshieh/humshieh.github.io.git
+    - secure: 
+# secure是自动生成的，执行`travis encrypt 'GH_TOKEN=${your_github_personal_access_token}' --add`
+
 addons: # Travis CI建议加的，自动更新api
   apt:
     update: true
@@ -35,11 +41,3 @@ after_success: # 执行script成功后，进入到public，把里面的代码提
   - git add .
   - git commit -m "Update site"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
-
-
-
-env:
-  global: # 全局变量，上面的提交到github的命令有用到
-    - GH_REF: github.com/humshieh/humshieh.github.io.git
-    - secure: 
-# secure是自动生成的，执行`travis encrypt 'GH_TOKEN=${your_github_personal_access_token}' --add`
