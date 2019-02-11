@@ -1,4 +1,5 @@
 language: node_js
+sudo: required
 node_js: stable
 
 addons: # Travis CI建议加的，自动更新api
@@ -9,13 +10,22 @@ cache:
   directories: 
     - node_modules # 缓存 node_modules
 
+branches:
+  only:
+    - dev # CI 只针对分支 dev
+
+before_install:
+  - npm install -g hexo-cli
+
 install:
   - npm install # 初次安装，在CI环境中，执行安装npm依赖
+  - npm install hexo-deployer-git --save
 
 # before_script: 
 
 script:
-  - hexo g # 执行 hexo generate，把文章编译到public中
+  - hexo clean
+  - hexo generate # 执行 hexo generate，把文章编译到public中
 
 after_success: # 执行script成功后，进入到public，把里面的代码提交到博客的master分支
   - cd ./public
@@ -26,9 +36,7 @@ after_success: # 执行script成功后，进入到public，把里面的代码提
   - git commit -m "Update site"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 
-branches:
-  only:
-    - dev # CI 只针对分支 dev
+
 
 env:
   global: # 全局变量，上面的提交到github的命令有用到
