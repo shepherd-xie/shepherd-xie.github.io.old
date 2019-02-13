@@ -553,7 +553,7 @@ public interface TransactionDefinition {、
 
 见[拦截](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-config-interceptors)在MVC配置一节的如何配置拦截器的实例。您也可以通过在各个`HandlerMapping`实现上使用setter直接注册它们 。
 
-请注意，`postHandle`对于在之前和之前 编写和提交响应的方法`@ResponseBody`和`ResponseEntity`方法不太有用。这意味着对响应进行任何更改都为时已晚，例如添加额外的标头。对于此类方案，您可以实现并将其声明为[Controller Advice](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-controller-advice) bean或直接对其进行配置 。`HandlerAdapter``postHandle``ResponseBodyAdvice``RequestMappingHandlerAdapter`
+请注意，`postHandle`对于在之前和之前 编写和提交响应的方法`@ResponseBody`和`ResponseEntity`方法不太有用。这意味着对响应进行任何更改都为时已晚，例如添加额外的标头。对于此类方案，您可以实现并将其声明为[Controller Advice](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-controller-advice) bean或直接对其进行配置 。`HandlerAdapter` `postHandle` `ResponseBodyAdvice` `RequestMappingHandlerAdapter`
 
 ## 文件上传
 
