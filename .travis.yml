@@ -34,7 +34,7 @@ script:
   - hexo generate # 执行 hexo generate，把文章编译到public中
 
 after_script: # 执行script成功后，进入到public，把里面的代码提交到博客的master分支
-  - git config user.name "humshieh"
-  - git config user.email "humshieh@gmail.com"
+  - git config user.name "shepherd"
+  - git config user.email "headley.xie@gmail.com"
   - sed -i "s/gh_token/${GH_TOKEN}/g" ./_config.yml
   - hexo deploy
