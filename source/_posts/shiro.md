@@ -8,6 +8,8 @@ top:
 
 ## *参考*[Apache Shiro Reference Documentation](https://shiro.apache.org/reference.html#apache-shiro-reference-documentation)
 
+<!-- more -->
+
 ## 1. QuickStart
 
 Apache Shiro是一个具有许多功能的综合应用程序安全框架。

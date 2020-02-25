@@ -8,6 +8,8 @@ top:
 
 ## JNI简单示例
 
+<!-- more -->
+
 **原贴地址[JNI简单示例,包括C语言实现及调用](https://blog.csdn.net/fenglibing/article/details/4300381)**
 
 _JNI（Java Native Interface）_是Java本地方法调用接口，从Java1.1开始，Java Native Interface(JNI)标准就成为java平台的一部分，它允许Java代码和其他语言写的代码进行交互。JNI一开始是为了本地已编译语言，尤其是C和C++而设计的，但是它并不妨碍你使用其他语言，只要调用约定受支持就可以了。

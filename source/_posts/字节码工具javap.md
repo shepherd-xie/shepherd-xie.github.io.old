@@ -8,6 +8,8 @@ top:
 
 # [javap命令详解](https://blog.csdn.net/zhaozheng7758/article/details/8623526)
 
+<!-- more -->
+
 javap是JDK自带的反汇编器，可以查看java编译器为我们生成的字节码。通过它，可以对照源代码和字节码，从而了解很多编译器内部的工作。可以在命令行窗口先用javap -help看下javap工具支持的选项：C:\>javap -help 
 
 ```shell

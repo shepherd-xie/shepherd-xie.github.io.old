@@ -6,6 +6,10 @@ categories: IDEA
 top:
 ---
 
+plugins
+
+<!-- more -->
+
 jRebel: 热部署
 GsonFormat: json转pojo
 mybatis

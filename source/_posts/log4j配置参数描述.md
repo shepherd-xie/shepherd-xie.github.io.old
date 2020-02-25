@@ -6,6 +6,10 @@ categories:
 top:
 ---
 
+log4j
+
+<!-- more -->
+
 ```
 # 可设置级别：TRACE→DEBUG→INFO→WARNING→ERROR→FATAL→OFF
 

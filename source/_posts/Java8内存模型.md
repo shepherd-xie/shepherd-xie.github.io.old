@@ -8,6 +8,8 @@ top:
 
 ## Java8内存模型
 
+<!-- more -->
+
 ![Java8内存模型](assets/java_runtime_data_areas.jpg)
 
 ![区域的内存大小](assets/Cookbook_JVMArguments_2_MemoryModel.png)

@@ -8,6 +8,8 @@ top:
 
 # ELK
 
+<!-- more -->
+
 ```yml
 version: '3'
 services:

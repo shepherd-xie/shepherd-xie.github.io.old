@@ -10,6 +10,8 @@ top:
 
 内省( Introspector ) 是 Java 语言对 JavaBean 类属性、事件的一种缺省处理方法。
 
+<!-- more -->
+
 JavaBean是一种特殊的类，主要用于传递数据信息，这种类中的方法主要用于访问私有的字段，且方法名符合某种命名规则。如果在两个模块之间传递信息，可以将信息封装进 JavaBean 中，这种对象称为“值对象”( Value Object )，或“ VO ”。方法比较少。这些信息储存在类的私有变量中，通过 `setter/getter` 获得。
 
 Java JDK 中提供了一套 API 用来访问某个属性的 `getter/setter` 方法，这就是内省。

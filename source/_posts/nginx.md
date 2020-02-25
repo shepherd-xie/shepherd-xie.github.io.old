@@ -8,6 +8,8 @@ top:
 
 # Nginx
 
+<!-- more -->
+
 ```yml
 version: '3.4'
 services:

@@ -8,6 +8,8 @@ top:
 
 在 `.idea` 文件夹中的 `workspace.xml` 中找到
 
+<!-- more -->
+
 ```xml
   <component name="RunDashboard">
     <option name="ruleStates">

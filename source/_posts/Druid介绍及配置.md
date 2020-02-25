@@ -8,6 +8,8 @@ top:
 
 Druid 介绍及配置
 
+<!-- more -->
+
 1. Druid是什么？
     Druid是Java语言中最好的数据库连接池。Druid能够提供强大的监控和扩展功能。
 

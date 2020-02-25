@@ -8,6 +8,8 @@ top:
 
 To state it simply, why does query A return a result but B doesn't?
 
+<!-- more -->
+
 ```
 A: select 'true' where 3 in (1, 2, 3, null)
 B: select 'true' where 3 not in (1, 2, null)

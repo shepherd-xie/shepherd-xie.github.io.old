@@ -12,6 +12,8 @@ top:
 
 Dropzone 是一个开源的 JavaScript 库，提供文件的异步上传功能，并支持拖拽上传功能
 
+<!-- more -->
+
 ### 页面引用
 
 CSS 部分，其中 `basic.min.css` 提供了官网的炫酷上传效果

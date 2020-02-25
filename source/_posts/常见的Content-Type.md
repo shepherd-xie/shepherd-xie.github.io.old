@@ -8,6 +8,8 @@ top:
 
 # 常见的Content-Type属性
 
+<!-- more -->
+
 ## x-www-form-urlencoded
 
 最常见的 `POST` 上传数据方式，浏览器原生表单如果不设置 `enctype` 就会以此种方式提交数据，需要上传的数据会以 `key=value` 的格式进行编码，随后进行 `url` 转码。

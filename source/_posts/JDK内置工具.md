@@ -8,6 +8,8 @@ top:
 
 ## [JDK内置工具](https://blog.csdn.net/fenglibing/article/details/6411999)
 
+<!-- more -->
+
 * javah命令(C Header and Stub File Generator)
 * jps命令(Java Virtual Machine Process Status Tool)
 * jstack命令(Java Stack Trace)

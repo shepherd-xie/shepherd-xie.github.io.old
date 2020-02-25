@@ -8,6 +8,8 @@ top:
 
 ## [参考](https://github.com/abel533/Mapper)[MyBatis-3-User-Guide-Simplified-Chinese.pdf]
 
+<!-- more -->
+
 ## 1. 入门
 
 * 什么是MyBatis
