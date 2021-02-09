@@ -43,7 +43,7 @@ cscript ospp.vbs /dstatusall
 
 ## GVLK keys
 
-> [Appendix A: KMS Client Setup Keys](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj612867(v=ws.11)?redirectedfrom=MSDN)
+> [Appendix A: KMS Client Setup Keys](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj612867(v=ws.11))
 >
 > Windows: https://docs.microsoft.com/en-us/windows-server/get-started/kmsclientkeys
 > Office 2013: https://technet.microsoft.com/en-us/library/dn385360.aspx
@@ -135,5 +135,3 @@ cscript ospp.vbs /dstatusall
 | Windows Server 2008 Datacenter                 | 7M67G-PC374-GR742-YH8V4-TCBY3 |
 | Windows Server 2008 Datacenter without Hyper-V | 22XQ2-VRXRG-P8D42-K34TD-G3QQC |
 | Windows Server 2008 for Itanium-Based Systems  | 4DWFP-JF3DJ-B7DTH-78FJB-PDRHK |
-
-## 
