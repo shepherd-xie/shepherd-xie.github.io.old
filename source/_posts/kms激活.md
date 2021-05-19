@@ -6,6 +6,8 @@ categories:
 top:
 ---
 
+<!-- more -->
+
 ## Windows
 
 ```shell

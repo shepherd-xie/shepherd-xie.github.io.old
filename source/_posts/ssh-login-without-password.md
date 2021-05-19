@@ -12,7 +12,9 @@ top:
 
 - 使用 `ssh-copy-id` 将公钥发送至目标主机
 
-  `ssh-copy-id -i ~/.ssh/id_rsa.pub user@host`
+>  `ssh-copy-id -i ~/.ssh/id_rsa.pub user@host`
+
+  `ssh-keygen -t ed25519 -C "your_email@example.com"`
 
 - 使用 `ssh` 免密登录
 
