@@ -6,6 +6,8 @@ categories:
 top:
 ---
 
+kms激活密钥
+
 <!-- more -->
 
 ## Windows
