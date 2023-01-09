@@ -6,13 +6,13 @@ categories: JVM
 top:
 ---
 
-## Java8内存模型
+Java8内存模型
+
+![Java8内存模型](https://images.orkva.com/images/2023/01/09/java_runtime_data_areas.jpg)
 
 <!-- more -->
 
-![Java8内存模型](assets/java_runtime_data_areas.jpg)
-
-![区域的内存大小](assets/Cookbook_JVMArguments_2_MemoryModel.png)
+![区域的内存大小](https://images.orkva.com/images/2023/01/09/Cookbook_JVMArguments_2_MemoryModel.png)
 
 | 控制参数 | 使用说明 |
 | :---: | :---: |

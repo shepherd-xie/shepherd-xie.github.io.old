@@ -6,10 +6,6 @@ categories: 组件
 top:
 ---
 
-# Dropzone 图片上传插件
-
-## Dropzone 简介
-
 Dropzone 是一个开源的 JavaScript 库，提供文件的异步上传功能，并支持拖拽上传功能
 
 <!-- more -->

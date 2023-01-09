@@ -6,7 +6,7 @@ categories:
 top:
 ---
 
-# 常见的Content-Type属性
+一些常见的Content-Type属性
 
 <!-- more -->
 

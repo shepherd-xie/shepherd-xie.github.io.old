@@ -6,6 +6,8 @@ categories:
 top:
 ---
 
+工作中发现的一个小问题简单记录一下，在 NOT IN 与 IN 中传入 NULL 值对于系统的不同影响。
+
 To state it simply, why does query A return a result but B doesn't?
 
 <!-- more -->

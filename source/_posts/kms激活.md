@@ -6,7 +6,7 @@ categories:
 top:
 ---
 
-kms激活密钥
+简单记录一下为虚拟机激活的kms密钥
 
 <!-- more -->
 

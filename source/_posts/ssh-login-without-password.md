@@ -8,14 +8,19 @@ top:
 
 - 使用 `ssh-keygen` 生成密钥对
 
-  `ssh-keygen -o -t rsa -b 4096 -C "email@example.com"`
+```shell
+# ssh-keygen -o -t rsa -b 4096 -C "your_email@example.com"
+# ed25519 加密算法运算速度更快
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+```
 
 - 使用 `ssh-copy-id` 将公钥发送至目标主机
 
->  `ssh-copy-id -i ~/.ssh/id_rsa.pub user@host`
-
-  `ssh-keygen -t ed25519 -C "your_email@example.com"`
+```shell
+ssh-copy-id -i ~/.ssh/id_ed25519.pub user@host
+```
 
 - 使用 `ssh` 免密登录
 
-  `ssh user@host`
+`ssh user@host`
