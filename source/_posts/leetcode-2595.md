@@ -1,8 +1,9 @@
 ---
-title: leetcode 2595. 奇偶位数
-date: 2023-06-27 14:48:53
+title: 剑指 Offer 03. 数组中重复的数字
+date: 2023-06-28 13:45:21
 tags:
-  - 位运算
+  - 数组
+  - 哈希表
   - easy
 categories:
   - leetcode
@@ -10,83 +11,93 @@ categories:
 top:
 ---
 
-> [2595. 奇偶位数](https://leetcode.cn/problems/number-of-even-and-odd-bits/description/)
+> [剑指 Offer 03. 数组中重复的数字](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/description/)
 >
 > 
 >
-> 给你一个 **正** 整数 `n` 。
+> 找出数组中重复的数字。
 >
-> 用 `even` 表示在 `n` 的二进制形式（下标从 **0** 开始）中值为 `1` 的偶数下标的个数。
->
->  用 `odd` 表示在 `n` 的二进制形式（下标从 **0** 开始）中值为 `1` 的奇数下标的个数。
->
-> 返回整数数组 `answer` ，其中 `answer = [even, odd]` 。
->
+> 
+>在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。
 >  
+>**示例 1：**
 > 
-> **示例 1：**
-> 
-> ```
-> 输入：n = 17
-> 输出：[2,0]
->解释：17 的二进制形式是 10001 。 
-> 下标 0 和 下标 4 对应的值为 1 。 
->共有 2 个偶数下标，0 个奇数下标。
-> ```
-> 
-> **示例 2：**
-> 
-> ```
-> 输入：n = 2
-> 输出：[0,1]
->解释：2 的二进制形式是 10 。 
-> 下标 1 对应的值为 1 。 
->共有 0 个偶数下标，1 个奇数下标。
-> ```
-> 
->  
-> 
->**提示：**
-> 
->- `1 <= n <= 1000`
-
-确实是简单题，像我这种菜鸡都能很快的理清思路，显然是利用 *移位* 操作和位运算来解决。直接上题解吧。
-
-```java
-public int[] evenOddBit(int n) {
-    int[] result = new int[2];
-    int count = 0;
-    while (n != 0) {
-        if ((n & 1) == 1) {
-            result[count] += 1;
-        }
-        count ^= 1;
-        n = n >>> 1;
-    }
-    return result;
-}
-```
-
-再看看大神们的操作，显然比我的方法简洁太多。
-
-```java
-public int[] evenOddBit(int n) {
-    var ans = new int[2];
-    for (int i = 0; n > 0; i ^= 1, n >>= 1)
-        ans[i] += n & 1;
-    return ans;
-}
-```
-
-当然，另一个操作就更神奇了，我们完全可以利用掩码的方式将原始字符做处理。
-
->```java
-> public int[] evenOddBit(int n) {
->     final int MASK = 0x5555;
->     return new int[]{Integer.bitCount(n & MASK), Integer.bitCount(n & (MASK >> 1))};
-> }
 >```
->
->作者：灵茶山艾府
->链接：https://leetcode.cn/problems/number-of-even-and-odd-bits/solutions/2177848/er-jin-zhi-ji-ben-cao-zuo-pythonjavacgo-o82o2/
->来源：力扣（LeetCode）
+>  输入：
+> [2, 3, 1, 0, 2, 5, 3]
+> 输出：2 或 3 
+> ```
+> 
+>  
+> 
+>**限制：**
+> 
+>`2 <= n <= 100000`
+
+这个题目看似是比较简单的，但是可以有多重解法来满足不同的空间复杂度和时间复杂度。
+
+### 方法一：哈希表
+
+```java
+class Solution {
+    public int findRepeatNumber(int[] nums) {
+        int[] hash = new int[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            if (hash[nums[i]] != 0) {
+                return nums[i];
+            }
+            hash[nums[i]] ++;
+        }
+        return -1;
+    }
+}
+```
+
+* **时间复杂度**：O(N)
+* **空间复杂度**：O(N)
+
+### 方法二：排序
+
+```java
+class Solution {
+    public int findRepeatNumber(int[] nums) {
+        Arrays.sort(nums);
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i - 1] == nums[i]) {
+                return nums[i];
+            }
+        }
+        return -1;
+    }
+}
+```
+
+* **时间复杂度**：O(N log(N))，数组排序时间
+* **空间复杂度**：O(N)
+
+### 方法三：原地交换
+
+由于题目中指明 `所有数字都在 0～n-1 的范围内`，那么我们可以将数组中的值一一映射至它们对应的下标位置，那么一定会存在同一个下标对应多个相同值得情况。
+
+```java
+class Solution {
+    public int findRepeatNumber(int[] nums) {
+        for (int i = 0; i < nums.length; ) {
+            if (nums[i] == i) {
+                i ++;
+                continue;
+            }
+            if (nums[nums[i]] == nums[i]) {
+                return nums[i];
+            }
+            int temp = nums[nums[i]];
+            nums[nums[i]] = nums[i];
+            nums[i] = temp;
+        }
+        return -1;
+    }
+}
+```
+
+* **时间复杂度**：O(N)
+* **空间复杂度**：O(1)
