@@ -6,8 +6,8 @@ tags:
   - 哈希表
   - 设计
   - medium
-categories:
   - leetcode
+categories:
   - 算法
 top:
 ---

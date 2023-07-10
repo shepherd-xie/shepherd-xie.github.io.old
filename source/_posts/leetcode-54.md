@@ -5,8 +5,8 @@ tags:
   - 数组
   - 矩阵
   - medium
-categories:
   - leetcode
+categories:
   - 算法
 top:
 ---

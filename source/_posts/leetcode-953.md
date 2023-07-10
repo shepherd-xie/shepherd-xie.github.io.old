@@ -5,8 +5,8 @@ tags:
   - 哈希表
   - 字符串
   - easy
-categories:
   - leetcode
+categories:
   - 算法
 top:
 ---

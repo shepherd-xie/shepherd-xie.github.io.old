@@ -4,8 +4,8 @@ date: 2023-07-05 10:49:11
 tags:
   - 数组
   - easy
-categories:
   - leetcode
+categories:
   - 算法
 top:
 ---

@@ -5,8 +5,8 @@ tags:
   - 哈希表
   - 数组
   - medium
-categories:
   - leetcode
+categories:
   - 算法
 top:
 ---

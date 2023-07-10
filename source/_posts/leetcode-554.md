@@ -3,8 +3,8 @@ title: leetcode-554 砖墙
 date: 2023-06-20 10:54:14
 tags:
   - 哈希表
-categories:
   - leetcode
+categories:
   - 算法
 top:
 ---

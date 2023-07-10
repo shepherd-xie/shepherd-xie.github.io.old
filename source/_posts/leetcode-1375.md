@@ -4,8 +4,8 @@ date: 2023-06-29 13:00:02
 tags:
   - 数组
   - medium
-categories:
   - leetcode
+categories:
   - 算法
 top:
 ---

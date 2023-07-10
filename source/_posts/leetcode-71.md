@@ -5,8 +5,8 @@ tags:
   - 字符串
   - 栈
   - medium
-categories:
   - leetcode
+categories:
   - 算法
 top:
 ---

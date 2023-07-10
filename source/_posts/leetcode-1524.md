@@ -3,8 +3,8 @@ title: leetcode 1524. 和为奇数的子数组数目
 date: 2023-06-26 14:36:17
 tags:
   - 哈希表
-categories:
   - leetcode
+categories:
   - 算法
 top:
 ---
