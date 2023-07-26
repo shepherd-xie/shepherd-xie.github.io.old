@@ -4,7 +4,8 @@ date: 2022-12-20 17:30:22
 tags: 
   - Typora
   - 图床
-categories:
+  - self-hosted
+categories: self-hosted
 top: 
 ---
 

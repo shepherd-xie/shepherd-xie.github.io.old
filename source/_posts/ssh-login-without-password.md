@@ -12,7 +12,6 @@ top:
 # ssh-keygen -o -t rsa -b 4096 -C "your_email@example.com"
 # ed25519 加密算法运算速度更快
 ssh-keygen -t ed25519 -C "your_email@example.com"
-
 ```
 
 - 使用 `ssh-copy-id` 将公钥发送至目标主机
