@@ -64,7 +64,7 @@ top:
 
 #### 参数配置
 
-配置文件位于 `steamapps\common\7 Days to Die Dedicated Server\serverconfig.xml` ，详细配置文件参考 [配置文件](# 配置文件) 。
+配置文件位于 `steamapps\common\7 Days to Die Dedicated Server\serverconfig.xml` ，详细配置文件参考 [配置文件](#配置文件) 。
 
 #### 启动服务器
 
@@ -76,7 +76,7 @@ top:
 
 #### 防火墙配置
 
-如果你使用的是云服务器，则需要在对应的云服务器防火墙允许服务器端口入站，参考 [服务器端口](# 服务器端口) 。
+如果你使用的是云服务器，则需要在对应的云服务器防火墙允许服务器端口入站，参考 [服务器端口](#服务器端口) 。
 
 ### 基于 Docker (Debian) 环境下的服务器搭建
 
@@ -143,7 +143,7 @@ services:
 
 #### 参数配置
 
-配置文件会在首次启动时自动生成，位于 `/path/to/folder/ServerFiles/sdtdserver.xml` ，详细配置文件参考 [配置文件](# 配置文件) 。
+配置文件会在首次启动时自动生成，位于 `/path/to/folder/ServerFiles/sdtdserver.xml` ，详细配置文件参考 [配置文件](#配置文件) 。
 
 #### 启动服务器
 
@@ -229,7 +229,7 @@ sponsor       s    | Donation options.
 
 #### 防火墙配置
 
-如果你使用的是云服务器，则需要在对应的云服务器防火墙允许服务器端口入站，参考 [服务器端口](# 服务器端口) 。
+如果你使用的是云服务器，则需要在对应的云服务器防火墙允许服务器端口入站，参考 [服务器端口](#服务器端口) 。
 
 ## 配置文件
 
