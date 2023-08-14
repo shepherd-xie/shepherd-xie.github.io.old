@@ -16,7 +16,7 @@ https://leetcode.cn/problems/subtract-the-product-and-sum-of-digits-of-an-intege
 
 <!-- more -->
 
-> - 给你一个整数 `n`，请你帮忙计算并返回该整数「各位数字之积」与「各位数字之和」的差。
+> 给你一个整数 `n`，请你帮忙计算并返回该整数「各位数字之积」与「各位数字之和」的差。
 >
 >    
 >
