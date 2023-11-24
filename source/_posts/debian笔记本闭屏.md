@@ -2,7 +2,7 @@
 title: debian 合上笔记本不休眠
 date: 2023-06-10 19:10:40
 tags: 
-categories:
+categories: linux
 top:
 
 ---

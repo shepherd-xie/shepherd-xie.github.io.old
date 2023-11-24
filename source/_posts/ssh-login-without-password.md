@@ -3,6 +3,7 @@ title: ssh免密登录
 date: 2020-03-25 15:47:12
 tags:
 categories:
+  - linux
 top:
 ---
 

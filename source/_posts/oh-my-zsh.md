@@ -2,7 +2,7 @@
 title: oh-my-zsh
 date: 2020-02-27 13:24:09
 tags:
-categories:
+categories: linux
 top:
 ---
 

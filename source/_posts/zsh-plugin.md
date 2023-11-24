@@ -3,8 +3,8 @@ title: zsh-plugin
 date: 2021-08-19 16:34:28
 tags:
   - zsh
+categories: 
   - linux
-categories: linux
 top:
 ---
 
