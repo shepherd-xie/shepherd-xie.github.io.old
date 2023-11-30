@@ -12,6 +12,8 @@ top:
 
 https://leetcode.cn/problems/minimum-deletions-to-make-array-beautiful/description/
 
+<!-- more -->
+
 > 给你一个下标从 **0** 开始的整数数组 `nums` ，如果满足下述条件，则认为数组 `nums` 是一个 **美丽数组** ：
 >
 > - `nums.length` 为偶数
