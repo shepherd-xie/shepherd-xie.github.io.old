@@ -1,8 +1,8 @@
 ---
 title: docker远程连接
 date: 2023-01-13 12:56:51
-tags:
-categories:
+tags: docker
+categories: docker
 top:
 ---
 
