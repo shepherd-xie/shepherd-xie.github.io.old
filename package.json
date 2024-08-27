@@ -6,7 +6,7 @@
     "build": "hexo generate"
   },
   "hexo": {
-    "version": "7.0.0-rc2"
+    "version": "7.3.0"
   },
   "dependencies": {
     "hexo": "^7.0.0-rc2",
@@ -21,6 +21,6 @@
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.3.3",
     "hexo-symbols-count-time": "^0.4.4",
-    "hexo-theme-next": "^8.18.0"
+    "hexo-theme-next": "^8.20.0"
   }
 }
