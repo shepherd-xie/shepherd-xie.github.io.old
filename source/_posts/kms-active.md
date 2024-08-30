@@ -1,12 +1,15 @@
 ---
-title: kms激活
+title: kms 激活
 date: 2021-02-08 14:46:16
 tags:
+  - kms
+  - windows
+  - office
 categories:
 top:
 ---
 
-简单记录一下为虚拟机激活的kms密钥
+使用 KMS 激活 Windows 及 Office .
 
 <!-- more -->
 
@@ -14,7 +17,7 @@ top:
 
 ```shell
 slmgr /upk
-slmgr /ipk GVLK //Windows版本密钥
+slmgr /ipk XXXX-XXXX-XXXX-XXXX //Windows版本密钥
 slmgr /skms kms.server.ip:port //KMS服务器地址 默认端口1688
 slmgr /ato
 slmgr /dlv
