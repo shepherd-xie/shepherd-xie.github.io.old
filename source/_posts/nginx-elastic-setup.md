@@ -2,10 +2,10 @@
 title: 使用 ElasticSearch 处理 Nginx 日志
 date: 2023-07-06 14:54:19
 tags:
-  - Docker
-  - Nginx
+  - docker
+  - nginx
 categories:
-  - Linux
+  - linux
 top:
 ---
 
